@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Styling khusus untuk halaman welcome */
+        .welcome-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #626262, #363636);
+            color: #fff;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .welcome-content h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            overflow: hidden;
+            white-space: nowrap;
+            animation: typing 3s steps(40, end); /* Hanya animasi typing, tanpa blink-caret */
+        }
+        .welcome-content p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+        .welcome-content .instruction {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-top: 20px;
+        }
+
+        /* Sembunyikan portofolio secara default */
+        #portfolio {
+            display: none;
+        }
+
+        /* Sembunyikan elemen audio */
+        #background-music {
+            display: none;
+        }
+
+        /* Styling untuk tombol musik minimalis */
+        .music-control {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: rgba(51, 51, 51, 0.8); /* Warna latar dengan transparansi */
+            color: #fff;
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%; /* Membuat tombol bulat */
+            cursor: pointer;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .music-control:hover {
+            background-color: rgba(85, 85, 85, 0.8); /* Warna latar saat hover */
+        }
+
+        .music-control i {
+            font-size: 18px; /* Ukuran ikon */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .welcome-content h1 {
+                font-size: 2rem;
+            }
+            .welcome-content p {
+                font-size: 1rem;
+            }
+            .welcome-content .instruction {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Elemen audio untuk musik latar -->
+    <audio id="background-music" loop>
+        <source src="https://e.top4top.io/m_3346s27ht1.mp3" type="audio/mpeg">
+        Browser Anda tidak mendukung elemen audio.
+    </audio>
+
+    <!-- Tombol untuk mengontrol musik -->
+    <button class="music-control" id="music-button">
+        <i class="fas fa-volume-up"></i> <!-- Ikon speaker dari Font Awesome -->
+    </button>
+
+    <!-- Halaman Welcome -->
+    <div id="welcome" class="welcome-container">
+        <div class="welcome-content">
+            <h1>Selamat Datang!</h1>
+            <p>Terima kasih telah mengunjungi portofolio saya. Mari jelajahi karya dan keterampilan saya.</p>
+            <div class="instruction">tekan dimana saja untuk lanjut</div>
+        </div>
+    </div>
+
+    <!-- Halaman Portofolio -->
+    <div id="portfolio">
+        <header>
+            <div class="container">
+                <h1>Portofolio Saya</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#about">Tentang Saya</a></li>
+                        <li><a href="#projects">Proyek</a></li>
+                        <li><a href="#contact">Kontak</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Bagian Tentang Saya -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2>Tentang Saya</h2>
+                <div class="about-content">
+                    <div class="profile-pic-container">
+                        <img src="https://d.top4top.io/p_334662hgs1.jpg" alt="Foto Profil" class="profile-pic">
+                    </div>
+                    <div class="profile-info">
+                        <h3>Putri Rupita Sari</h3>
+                        <p>Halo! Saya adalah seorang pengembang web yang bersemangat dalam menciptakan solusi digital yang kreatif dan efektif. Saya memiliki pengalaman dalam HTML, CSS, JavaScript, dan berbagai framework modern.</p>
+                        <!-- Daftar Keterampilan -->
+                        <h4>Keterampilan:</h4>
+                        <ul>
+                            <li>HTML & CSS</li>
+                            <li>JavaScript</li>
+                            <li>React.js</li>
+                            <li>Node.js</li>
+                            <li>Git & GitHub</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bagian Proyek -->
+<section id="projects" class="section">
+    <div class="container">
+        <h2>Proyek</h2>
+        <div class="project-grid">
+            <div class="project">
+                <h3>Proyek 1</h3>
+                <img src="https://h.top4top.io/p_3346vw1e91.jpg" alt="Proyek 1" class="project-image">
+                <p>Deskripsi singkat tentang proyek 1.</p>
+            </div>
+            <div class="project">
+                <h3>Proyek 2</h3>
+                <img src="https://h.top4top.io/p_3346kvqwz1.jpg" alt="Proyek 2" class="project-image">
+                <p>Deskripsi singkat tentang proyek 2.</p>
+            </div>
+            <div class="project">
+                <h3>Proyek 3</h3>
+                <img src="https://c.top4top.io/p_3346r6hpd1.jpg" alt="Proyek 3" class="project-image">
+                <p>Deskripsi singkat tentang proyek 3.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- Bagian Kontak -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Kontak</h2>
+                <form id="contact-form">
+                    <label for="name">Nama:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Pesan:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    
+                    <button type="submit">Kirim</button>
+                </form>
+
+                <!-- Tautan WhatsApp, Instagram, dan LinkedIn -->
+                <div class="social-links">
+                    <a href="https://wa.me/+62 82281659672" target="_blank" class="social-link">WhatsApp</a>
+                    <a href="https://www.instagram.com/puputchange?igsh=MTM1enIwOWNwZDZhMw==&utm_source=ig_contact_invite" target="_blank" class="social-link">Instagram</a>
+                    <a href="https://www.linkedin.com/in/yourlinkedin" target="_blank" class="social-link">LinkedIn</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <p>&copy; 2025 Putri Rupita Sari. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Fungsi untuk masuk ke portofolio
+        function enterPortfolio() {
+            document.getElementById('welcome').style.display = 'none'; // Sembunyikan welcome
+            document.getElementById('portfolio').style.display = 'block'; // Tampilkan portofolio
+        }
+
+        // Handle form submission
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Pesan Anda telah terkirim!');
+        });
+
+        // Handle click event untuk masuk ke portofolio
+        document.addEventListener('click', function() {
+            enterPortfolio();
+        });
+
+        // Kontrol musik manual
+        const musicButton = document.getElementById('music-button');
+        const backgroundMusic = document.getElementById('background-music');
+
+        musicButton.addEventListener('click', function() {
+            if (backgroundMusic.paused) {
+                backgroundMusic.play();
+                musicButton.innerHTML = '<i class="fas fa-volume-up"></i>'; // Ikon speaker aktif
+            } else {
+                backgroundMusic.pause();
+                musicButton.innerHTML = '<i class="fas fa-volume-mute"></i>'; // Ikon speaker nonaktif
+            }
+        });
+    </script>
+</body>
+</html>
